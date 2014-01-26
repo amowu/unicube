@@ -1,0 +1,9 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Declare heights because of positioning of img element */
+.carousel-inner > .item > img { margin: 0 auto; }
+
+.sky {
+  background: #faf2d4 url(../images/BG_I_001.png) repeat-x;
+}
