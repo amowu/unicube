@@ -6,83 +6,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    body {
+      background-color: rgb(250, 242, 212);
+    }
+
     .carousel-inner > .item > img { margin: 0 auto; }
     .carousel .item {
       height: 500px;
+    }
+
+    .center {
+      margin: 0 auto;
     }
 
     .skrollable {
       position: fixed;
       pointer-events: none;
     }
-    
+
     .sky {
-      background: rgb(250, 242, 212) url(images/BG_I_001.png) repeat-x left 550px;
-    }
-    .ground {
-      height: 128px;
-      background: url(images/BG_C_001.png) repeat-x left bottom;
-    }
-    .cloud-01 {
       width: 100%;
-      height: 100%;
-      background: url(images/cloud_01.png) no-repeat 0px 550px;
+      height: 1318px;
+      background: rgb(250, 242, 212) url(images/BG_I_001.png) repeat-x left top;
+      z-index: -501;
     }
     .cloud-02 {
       width: 100%;
       height: 100%;
       background: url(images/cloud_02.png) repeat-x 0px 550px;
+      z-index: -500;
     }
-    .grass-01 {
-      width: 512px;
-      height: 320px;
-      background: url(images/BG_A_001.png) no-repeat -512px 0px;
-      z-index: 501;
-    }
-    .grass-02 {
-      width: 512px;
-      height: 320px;
-      background: url(images/BG_A_001.png) no-repeat 0px 0px;
-      z-index: 501;
-    }
-    .tree-01 {
-      width: 512px;
-      height: 512px;
-      background: url(images/BG_F_001.png) no-repeat 0px 0px;
-      z-index: -409;
+    .cloud-01 {
+      width: 100%;
+      height: 100%;
+      background: url(images/cloud_01.png) no-repeat 0px 550px;
+      z-index: -499;
     }
     .tree-02 {
       width: 256px;
       height: 256px;
       background: url(images/BG_G_001.png) no-repeat -768px 0px;
-      z-index: -410;
+      z-index: -498;
+    }
+    .tree-01 {
+      width: 512px;
+      height: 512px;
+      background: url(images/BG_F_001.png) no-repeat 0px 0px;
+      z-index: -497;
     }
     .house {
       width: 512px;
       height: 512px;
       background: url(images/BG_E_001.png) no-repeat 0px 0px;
-      z-index: -408;
+      z-index: -496;
     }
     .scarecrow {
       width: 512px;
       height: 256px;
       background: url(images/BG_E_001.png) no-repeat -512px 0px;
-      z-index: -407;
+      z-index: -495;
     }
-    .gu-01 {
-      background: url(images/GU_01.png) no-repeat -128px -240px;
-      width: 120px;
-      height: 100px;
-      z-index: 500;
-    }
-    .gu-02 {
-      background: url(images/GU_02.png) no-repeat -120px -120px;
-      width: 120px;
-      height: 120px;
-      z-index: 500;
+    .ground {
+      height: 128px;
+      background: url(images/BG_C_001.png) repeat-x left bottom;
     }
     .block-01 {
-      /*margin-right: -96px;*/
+      margin-right: -96px;
       background: url(images/BLOCK_01.png) no-repeat -384px 0px;
       width: 192px;
       height: 192px;
@@ -93,35 +82,59 @@
       background-position: center;
       width: 100%;
       height: 128px;
-      z-index: 500;
+      z-index: 501;
+    }
+    .gu-01 {
+      background: url(images/GU_01.png) no-repeat -128px -240px;
+      width: 120px;
+      height: 100px;
+      z-index: 502;
+    }
+    .gu-02 {
+      background: url(images/GU_02.png) no-repeat -120px -120px;
+      width: 120px;
+      height: 120px;
+      z-index: 503;
+    }
+    .grass-01 {
+      width: 512px;
+      height: 320px;
+      background: url(images/BG_A_001.png) no-repeat -512px 0px;
+      z-index: 504;
+    }
+    .grass-02 {
+      width: 512px;
+      height: 320px;
+      background: url(images/BG_A_001.png) no-repeat 0px 0px;
+      z-index: 505;
     }
   </style>
 </head>
-<body class="sky">
+<body>
 
-  <div id="skrollr-body" data-smooth-scrolling="off">
+  <div class="skrollable sky" style="left: 0px;top: 0px;" data-start="left: 0px;top: 0px;" data-1318="left: 0px;top: -1318px;"></div>
 
-    <!-- Cloud -->
-    <div class="skrollable cloud-02" style="background-position: 0px 480px;" data-start="background-position: 0px 480px;" data-1318="background-position: 256px -512px;"></div>
-    <div class="skrollable cloud-01" style="background-position: -1024px 400px;" data-start="background-position: -1024px 400px;" data-1318="background-position: 1024px -768px;"></div>
+  <!-- Cloud -->
+  <div class="skrollable cloud-02" style="background-position: 0px 480px;" data-start="background-position: 0px 480px;" data-1318="background-position: 256px -512px;"></div>
+  <div class="skrollable cloud-01" style="background-position: -1024px 400px;" data-start="background-position: -1024px 400px;" data-1318="background-position: 1024px -768px;"></div>
 
-    <!-- Tree -->
-    <div class="skrollable tree-02" style="right: 0px; bottom: -256px" data-128-end="right: 0px; bottom: -256px" data-end="right: 0px; bottom: 64px"></div>
-    <div class="skrollable tree-01" style="right: 0px; bottom: -512px" data-128-end="right: 0px; bottom: -512px" data-end="right: 0px; bottom: 64px"></div>
+  <!-- Tree -->
+  <div class="skrollable tree-02" style="right: 0px;bottom: -256px" data-128-end="right: 0px;bottom: -256px" data-end="right: 0px;bottom: 64px"></div>
+  <div class="skrollable tree-01" style="right: 0px;bottom: -512px" data-128-end="right: 0px;bottom: -512px" data-end="right: 0px;bottom: 64px"></div>
 
-    <!-- House -->
-    <div class="hidden-xs hidden-sm skrollable house" style="left: -128px; bottom: -512px" data-128-end="left: -128px; bottom: -512px" data-end="left: -128px; bottom: 64px"></div>
-    <!-- Scarecrow -->
-    <div class="hidden-xs skrollable scarecrow" style="right: 0px; bottom: -256px" data-128-end="right: 0px; bottom: -256px" data-end="right: 0px; bottom: 64px"></div>
+  <!-- House -->
+  <div class="hidden-xs skrollable house" style="left: -128px;bottom: -512px" data-128-end="left: -128px;bottom: -512px" data-end="left: -128px;bottom: 64px"></div>
+  <!-- Scarecrow -->
+  <div class="hidden-xs skrollable scarecrow" style="right: 0px;bottom: -256px" data-128-end="right: 0px;bottom: -256px" data-end="right: 0px;bottom: 64px"></div>
 
-    <!-- Grass -->
-    <div class="hidden-xs hidden-sm skrollable grass-01" style="right:-64px;bottom:-320px;" data-start="right:-64px;bottom[cubic]:-320px;" data-end="bottom:0px;"></div>
-    <div class="hidden-xs hidden-sm skrollable grass-02" style="left:-64px;bottom:-320px;" data-start="left:-64px;bottom[cubic]:-320px;" data-end="bottom:0px;"></div>
+  <!-- Block -->
+  <div class="skrollable block-01" style="width: 192px;height: 192px;right: 50%;bottom: 100%;" data-192-end="right: 50%;bottom: 100%;" data-end="right: 50%;bottom: 0%;"></div>
 
-    <!-- Block -->
-    <div class="skrollable" style="width:192px;height:192px;right:0%;bottom:100%;" data-1318="right:0%;bottom:100%;" data-end="right:0%;bottom:0%;">
-      <div class="block-01" style="background-position:!0px 0px;" data-192-end="background-position:!-192px 0px;"></div>
-    </div>
+  <!-- Grass -->
+  <div class="hidden-xs skrollable grass-01" style="right: -64px;bottom: -320px;" data-start="right: -64px;bottom: -320px;" data-end="bottom: 0px;"></div>
+  <div class="hidden-xs skrollable grass-02" style="left: -64px;bottom: -320px;" data-start="left: -64px;bottom: -320px;" data-end="bottom: 0px;"></div>
+
+  <div id="skrollr-body">
 
     <!-- Navbar -->
     <div class="navbar-inverse navbar-static-top" role="navigation">
@@ -154,7 +167,7 @@
     </div>
 
     <!-- Carousel -->
-    <div id="carousel-example-generic" class="carousel slide" style="height:500px;background-color:rgb(117,171,188);" data-ride="carousel">
+    <div id="carousel-example-generic" class="carousel slide" style="height:500px;" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -202,24 +215,24 @@
       <hr class="featurette-divider">
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140x140.png">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        </div><!-- /.col-md-4 -->
+        <div class="col-md-4">
           <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140x140.png">
           <h2>Heading</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        </div><!-- /.col-md-4 -->
+        <div class="col-md-4">
           <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140x140.png">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
+        </div><!-- /.col-md-4 -->
       </div><!-- /.row -->
 
       <!-- START THE FEATURETTES -->
@@ -286,9 +299,10 @@
 
     <!-- Ground -->
     <div class="ground">
-      <div class="block-02" style="margin: 0 auto;"></div>
+      <div class="center block-02"></div>
     </div>
-  </div>
+
+  </div><!-- /.skrollr-body -->
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -300,7 +314,10 @@
   <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="bower_components/skrollr/dist/skrollr.min.js"></script>
   <script type="text/javascript">
-    var s = skrollr.init({forceHeight:true});
+    var s = skrollr.init({
+      forceHeight: false,
+      mobileDeceleration: 1
+    });
   </script>
 </body>
 </html>

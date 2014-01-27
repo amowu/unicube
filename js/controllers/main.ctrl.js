@@ -1,6 +1,6 @@
 var mainController = angular.module('mainController', []);
 
-mainController.controller('IndexController', [
+mainController.controller('HomeController', [
   '$scope',
   function($scope) {
 

@@ -8,8 +8,8 @@ app.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'partials/test-skrollr.html',
-        controller: 'IndexController'
+        templateUrl: 'partials/home.html',
+        controller: 'HomeController'
       })
       .otherwise({
         redirectTo: '/'
