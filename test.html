@@ -45,7 +45,7 @@
     .tree-02 {
       width: 256px;
       height: 256px;
-      background: url(images/BG_G_001.png) no-repeat -768px 0px;
+      background: url(images/BG_F_001.png) no-repeat -512px -256px;
       z-index: -498;
     }
     .tree-01 {
@@ -63,7 +63,7 @@
     .scarecrow {
       width: 512px;
       height: 256px;
-      background: url(images/BG_E_001.png) no-repeat -512px 0px;
+      background: url(images/BG_F_001.png) no-repeat -512px 0px;
       z-index: -495;
     }
     .ground {
@@ -72,7 +72,7 @@
     }
     .block-01 {
       margin-right: -96px;
-      background: url(images/BLOCK_01.png) no-repeat -384px 0px;
+      background: url(images/BLOCK_01.png) no-repeat 0px 0px;
       width: 192px;
       height: 192px;
       z-index: 500;
@@ -85,13 +85,13 @@
       z-index: 501;
     }
     .gu-01 {
-      background: url(images/GU_01.png) no-repeat -128px -240px;
+      background: url(images/GU.png) no-repeat 0px 0px;
       width: 120px;
-      height: 100px;
+      height: 120px;
       z-index: 502;
     }
     .gu-02 {
-      background: url(images/GU_02.png) no-repeat -120px -120px;
+      background: url(images/GU.png) no-repeat -120px 0px;
       width: 120px;
       height: 120px;
       z-index: 503;
@@ -112,27 +112,28 @@
 </head>
 <body>
 
-  <div class="skrollable sky" style="left: 0px;top: 0px;" data-start="left: 0px;top: 0px;" data-1318="left: 0px;top: -1318px;"></div>
+  <!-- Sky -->
+  <div skrollr class="skrollable sky" style="left: 0px;top: 0px;" data-start="left: 0px;top: 0px;" data-1318="left: 0px;top: -1318px;"></div>
 
   <!-- Cloud -->
-  <div class="skrollable cloud-02" style="background-position: 0px 480px;" data-start="background-position: 0px 480px;" data-1318="background-position: 256px -512px;"></div>
-  <div class="skrollable cloud-01" style="background-position: -1024px 400px;" data-start="background-position: -1024px 400px;" data-1318="background-position: 1024px -768px;"></div>
+  <div skrollr class="skrollable cloud-02" style="background-position: 0px 480px;" data-start="background-position: 0px 480px;" data-1318="background-position: 256px -512px;"></div>
+  <div skrollr class="skrollable cloud-01" style="background-position: -1024px 400px;" data-start="background-position: -1024px 400px;" data-1318="background-position: 1024px -768px;"></div>
 
   <!-- Tree -->
-  <div class="skrollable tree-02" style="right: 0px;bottom: -256px" data-128-end="right: 0px;bottom: -256px" data-end="right: 0px;bottom: 64px"></div>
-  <div class="skrollable tree-01" style="right: 0px;bottom: -512px" data-128-end="right: 0px;bottom: -512px" data-end="right: 0px;bottom: 64px"></div>
+  <div skrollr class="skrollable tree-02" style="right: 0px;bottom: -256px" data-128-end="right: 0px;bottom: -256px" data-end="right: 0px;bottom: 64px"></div>
+  <div skrollr class="skrollable tree-01" style="right: 0px;bottom: -512px" data-128-end="right: 0px;bottom: -512px" data-end="right: 0px;bottom: 64px"></div>
 
   <!-- House -->
-  <div class="hidden-xs skrollable house" style="left: -128px;bottom: -512px" data-128-end="left: -128px;bottom: -512px" data-end="left: -128px;bottom: 64px"></div>
+  <div skrollr class="hidden-xs skrollable house" style="left: -128px;bottom: -512px" data-128-end="left: -128px;bottom: -512px" data-end="left: -128px;bottom: 64px"></div>
   <!-- Scarecrow -->
-  <div class="hidden-xs skrollable scarecrow" style="right: 0px;bottom: -256px" data-128-end="right: 0px;bottom: -256px" data-end="right: 0px;bottom: 64px"></div>
+  <div skrollr class="hidden-xs skrollable scarecrow" style="right: 0px;bottom: -256px" data-128-end="right: 0px;bottom: -256px" data-end="right: 0px;bottom: 64px"></div>
 
   <!-- Block -->
-  <div class="skrollable block-01" style="width: 192px;height: 192px;right: 50%;bottom: 100%;" data-192-end="right: 50%;bottom: 100%;" data-end="right: 50%;bottom: 0%;"></div>
+  <div skrollr class="skrollable block-01" style="width: 192px;height: 192px;right: 50%;bottom: 100%;" data-192-end="right: 50%;bottom: 100%;" data-end="right: 50%;bottom: 0%;"></div>
 
   <!-- Grass -->
-  <div class="hidden-xs skrollable grass-01" style="right: -64px;bottom: -320px;" data-start="right: -64px;bottom: -320px;" data-end="bottom: 0px;"></div>
-  <div class="hidden-xs skrollable grass-02" style="left: -64px;bottom: -320px;" data-start="left: -64px;bottom: -320px;" data-end="bottom: 0px;"></div>
+  <div skrollr class="hidden-xs skrollable grass-01" style="right: -64px;bottom: -320px;" data-start="right: -64px;bottom: -320px;" data-end="bottom: 0px;"></div>
+  <div skrollr class="hidden-xs skrollable grass-02" style="left: -64px;bottom: -320px;" data-start="left: -64px;bottom: -320px;" data-end="bottom: 0px;"></div>
 
   <div id="skrollr-body">
 
@@ -146,17 +147,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">UniCube</a>
+          <a class="navbar-brand" href="">UniCube</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">GAMES <b class="caret"></b></a>
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">GAMES <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Gu Morning</a></li>
-                <li><a href="#">Subcat</a></li>
-                <li><a href="#">對戰三國</a></li>
-                <li><a href="#">末日少女</a></li>
+                <li><a href="">Gu Morning</a></li>
+                <li><a href="">Subcat</a></li>
+                <li><a href="">對戰三國</a></li>
+                <li><a href="">末日少女</a></li>
               </ul>
             </li>
             <li><a href="#about">ABOUT</a></li>
@@ -183,7 +184,7 @@
             <div class="carousel-caption">
                 <h1>Another example headline.</h1>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                <p><a class="btn btn-lg btn-primary" href="" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -193,7 +194,7 @@
             <div class="carousel-caption">
                 <h1>Another example headline.</h1>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                <p><a class="btn btn-lg btn-primary" href="" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -203,7 +204,7 @@
             <div class="carousel-caption">
                 <h1>Another example headline.</h1>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                <p><a class="btn btn-lg btn-primary" href="" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -219,19 +220,19 @@
           <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140x140.png">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+          <p><a class="btn btn-default" href="" role="button">View details »</a></p>
         </div><!-- /.col-md-4 -->
         <div class="col-md-4">
           <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140x140.png">
           <h2>Heading</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+          <p><a class="btn btn-default" href="" role="button">View details »</a></p>
         </div><!-- /.col-md-4 -->
         <div class="col-md-4">
           <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140x140.png">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+          <p><a class="btn btn-default" href="" role="button">View details »</a></p>
         </div><!-- /.col-md-4 -->
       </div><!-- /.row -->
 
@@ -279,7 +280,7 @@
 
       <!-- FOOTER -->
       <footer>
-        <!--<p class="text-right hidden-xs"><a href="#">Back to top</a></p>-->
+        <!--<p class="text-right hidden-xs"><a href="">Back to top</a></p>-->
         <p class="text-center">© 2014 Unicube Co., Inc.</p>
       </footer>
 
@@ -289,7 +290,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-6">
-          <div class="gu-01" style="margin-left:-50px;margin-top:20px;"></div>
+          <div class="gu-01" style="margin-left:-30px;"></div>
         </div>
         <div class="col-xs-6">
           <div class="pull-right gu-02" style="margin-right: -35px;"></div>
@@ -303,6 +304,7 @@
     </div>
 
   </div><!-- /.skrollr-body -->
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
