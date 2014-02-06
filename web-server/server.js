@@ -3,6 +3,7 @@ var express = require('express');
 var app = express();
   // Configuration
   app.configure(function() {
+  app.use(express.logger('dev'));
   app.use(express.static('../web-client'));
 });
 

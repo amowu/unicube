@@ -4,7 +4,6 @@
   "authors": [
     "Amo Wu <amo260@gmail.com>"
   ],
-  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
