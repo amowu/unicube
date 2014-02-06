@@ -5,6 +5,7 @@
   "author": "Amo Wu",
   "private": true,
   "dependencies": {
-    "express": "3.4.7"
+    "express": "3.4.7",
+    "forever": "0.10.11"
   }
 }
