@@ -12,7 +12,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "https://github.com/components/jquery.git#1.9.0",
     "angular": "https://github.com/angular/bower-angular.git#1.2.6",
     "angular-route": "https://github.com/angular/bower-angular-route.git#1.2.6",
     "bootstrap": "https://github.com/twbs/bootstrap.git#3.0.3",
