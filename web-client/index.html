@@ -9,157 +9,142 @@
 </head>
 <body>
 
-  <!-- Sky -->
-  <!-- <div class="skrollable sky" style="left: 0px;top: 0px;" data-start="left: 0px;top: 0px;" data-1318="left: 0px;top: -1318px;"></div> -->
+  <!-- Navbar -->
+  <div class="navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" name="home"><img src="images/logo_top.png" alt="Unicube Co., Ltd."></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">GAMES <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#games" data-target="#carousel-example-generic" data-slide-to="0">Gu Morning</a></li>
+              <li><a href="#games" data-target="#carousel-example-generic" data-slide-to="1">對戰三國</a></li>
+            </ul>
+          </li>
+          <li><a href="#about">ABOUT</a></li>
+          <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">JOBS <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#join">JOIN US</a></li>
+              <li><a href="#outsource">OUTSOURCE</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  <!-- Cloud -->
-  <!-- <div class="skrollable cloud-02" style="background-position: 0px 480px;" data-start="background-position: 0px 480px;" data-1318="background-position: 256px -512px;"></div> -->
-  <!-- <div class="skrollable cloud-01" style="background-position: -1024px 400px;" data-start="background-position: -1024px 400px;" data-1318="background-position: 1024px -768px;"></div> -->
+  <!-- Carousel -->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <a name="games"></a>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    </ol>
 
-  <!-- Tree -->
-  <!-- <div class="skrollable tree-02" style="right: 0px;bottom: -256px" data-128-end="right: 0px;bottom: -256px" data-end="right: 0px;bottom: 64px"></div> -->
-  <!-- <div class="skrollable tree-01" style="right: 0px;bottom: -512px" data-128-end="right: 0px;bottom: -512px" data-end="right: 0px;bottom: 64px"></div> -->
-
-  <!-- House -->
-  <!-- <div class="hidden-xs skrollable house" style="left: -128px;bottom: -512px" data-128-end="left: -128px;bottom: -512px" data-end="left: -128px;bottom: 64px"></div> -->
-  <!-- Scarecrow -->
-  <!-- <div class="hidden-xs skrollable scarecrow" style="right: 0px;bottom: -256px" data-128-end="right: 0px;bottom: -256px" data-end="right: 0px;bottom: 64px"></div> -->
-
-  <!-- Block -->
-  <!-- <div class="skrollable block-01" style="width: 192px;height: 192px;right: 50%;bottom: 100%;" data-192-end="right: 50%;bottom: 100%;" data-end="right: 50%;bottom: 0%;"></div> -->
-
-  <!-- Grass -->
-  <!-- <div class="hidden-xs skrollable grass-01" style="right: -64px;bottom: -320px;" data-start="right: -64px;bottom: -320px;" data-end="bottom: 0px;"></div> -->
-  <!-- <div class="hidden-xs skrollable grass-02" style="left: -64px;bottom: -320px;" data-start="left: -64px;bottom: -320px;" data-end="bottom: 0px;"></div> -->
-
-  <div id="skrollr-body">
-
-    <!-- Navbar -->
-    <div class="navbar-default navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href=""><img src="images/logo_top.png" alt="Unicube Co., Ltd."></a>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images/games/gumorning_pic.png" alt="Gu Morning 早安咕咕">
+        <!-- <img style="position: absolute; left: auto; right: 0; top:2%;" src="images/games/gumorning_logo.png" alt=""> -->
+        <div class="carousel-caption">
+          <p class="text-right">
+            <a href="https://itunes.apple.com/tw/app/gu-morning-zao-an-gu-gu/id474441856?mt=8"><img src="images/games/Available_on_the_App_Store.png" alt="Available on the App Store"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.gamania.gumorning&hl=zh_TW"><img src="images/games/Google_Play_Badge.png" alt="Available on the Google Play"></a>
+          </p>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="" class="dropdown-toggle" data-toggle="dropdown">GAMES <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="">Gu Morning</a></li>
-                <li><a href="">對戰三國</a></li>
-                <li><a href="">末日少女</a></li>
-              </ul>
-            </li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#jobs">JOBS</a></li>
+      </div>
+      <div class="item">
+        <img src="images/games/sd_pic.png" alt="對戰三國">
+        <div class="container">
+          <div class="carousel-caption">
+            <p class="text-right">
+            <a href="https://itunes.apple.com/tw/app/id667785093?mt=8"><img src="images/games/Available_on_the_App_Store.png" alt="Available on the App Store"></a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.carousel-example-generic -->
+
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <div class="marketing">
+    
+    <div id="featurette-about" class="row featurette">
+      <a name="about"></a>
+      <div class="container">
+        <div class="col-sm-6">
+          <h1 class="">About UniCube</h1>
+          <p class="lead">遊酷科技專注手機遊戲研發，2013年「末日少女」上市，成績亮眼，深獲玩家支持。2014年起將推出多款手機與平板遊戲，開拓市場。<br/>Unicube由Uni和Cube組成，意寓無限的創意與組合。Unicube立志成為一家卓越的行動遊戲公司， 以創造隨時隨地的快樂為使命，為人們帶來最佳的遊戲體驗。</p>
+          <p class="lead">合作夥伴 <img src="images/about/logo_gamania.png" alt="遊戲橘子"> <img src="images/about/logo_mimigigi.png" alt="秘密基地"></p>
+        </div>
+        <div class="col-sm-6"></div>
+      <!-- <div style="background:url(images/joinus/pic_joinus01.png) no-repeat left bottom; position:absolute;width:100%;height:154px;bottom:0;"></div> -->
+      </div>
+      
+    </div>
+
+    <div id="featurette-join" class="row featurette">
+      <a name="join"></a>
+      <div class="container">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+          <h1 class="text-center">Join Us</h1>
+          <p class="lead">我們的工作環境是歡樂有趣的，輕鬆但不放鬆。我們重視團隊合作，持續改善，不斷挑戰更高的目標。<br/>如果你也熱愛遊戲，懷抱夢想，歡迎加入UniCube遊酷科技，與我們一起用遊戲征服全世界。</p>
+          <ul class="lead">
+            <li>專案獎金</li>
+            <li>三節禮金</li>
+            <li>員工餐廳、健身房、遊戲房、幼稚園</li>
+            <li>勞保、健保、團保</li>
+            <li>生日假</li>
           </ul>
         </div>
       </div>
     </div>
 
-    <!-- Carousel -->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="images/games/gumorning_pic.png" alt="Gu Morning 早安咕咕">
-          <!-- <img style="position: absolute; left: auto; right: 0; top:2%;" src="images/games/gumorning_logo.png" alt=""> -->
-          <div class="carousel-caption">
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/games/sd_pic.png" alt="對戰三國">
-          <div class="container">
-            <div class="carousel-caption">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- /.carousel-example-generic -->
-
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-    <div class="container marketing">
-
-      <div id="featurette-about" class="row featurette" style="position:relative;">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-5" style="height:100%;">
-          <h1 class="">About UniCube</h1>
-          <p class="lead">遊酷科技專注手機遊戲研發，2013年「末日少女」上市，成績亮眼，深獲玩家支持。2014年起將推出多款手機與平板遊戲，開拓市場。<br/>Unicube由Uni和Cube組成，意寓無限的創意與組合。Unicube立志成為一家卓越的行動遊戲公司， 以創造隨時隨地的快樂為使命，為人們帶來最佳的遊戲體驗。</p>
-          <p class="lead">合作夥伴 <img src="images/about/logo_gamania.png" alt="遊戲橘子"> <img src="images/about/logo_mimigigi.png" alt="秘密基地"></p>
-        </div>
-        <div class="col-sm-6" style="height: 623px;"></div>
-        <div style="background:url(images/joinus/pic_joinus01.png) no-repeat left bottom; position:absolute;width:100%;height:154px;bottom:0;"></div>
-      </div>
-
-      <div id="featurette-join" class="row featurette">
-        <div class="col-sm-6"></div>
-        <div class="col-sm-5" style="height:100%;">
-          <div style="position:absolute;bottom:0;">
-            <h1 class="text-center">Join Us</h1>
-            <p class="lead">我們的工作環境是歡樂有趣的，輕鬆但不放鬆。我們重視團隊合作，持續改善，不斷挑戰更高的目標。<br/>如果你也熱愛遊戲，懷抱夢想，歡迎加入UniCube遊酷科技，與我們一起用遊戲征服全世界。</p>
-            <ul class="lead">
-              <li>專案獎金</li>
-              <li>三節禮金</li>
-              <li>員工餐廳、健身房、遊戲房、幼稚園</li>
-              <li>勞保、健保、團保</li>
-              <li>生日假</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-1"></div>
-      </div>
-
-      <div id="featurette-outsource" class="row featurette vertical-center">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-5 ">
+    <div id="featurette-outsource" class="row featurette">
+      <a name="outsource"></a>
+      <div class="container">
+        <div class="col-sm-6">
           <h1 class="text-center">Outsource</h1>
           <p class="lead">誠徵長期合作的外包繪師，繪製內容為遊戲內的人物、物件、怪物、場景等。風格不限，酬勞優渥，歡迎各大好手洽談。<br/><br/>聯絡方式： <a href="mailto:outsource@unicube.com.tw">outsource@unicube.com.tw</a></p>
         </div>
         <div class="col-sm-6"></div>
       </div>
+    </div>
 
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-      <!-- FOOTER -->
-      <footer>
-        <!--<p class="text-right hidden-xs"><a href="">Back to top</a></p>-->
-        <p class="text-center">© 2014 Unicube Co., Ltd.</p>
-      </footer>
-
-    </div><!-- /.marketing -->
-
-    <!-- Gu -->
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6">
-          <div class="gu-01" style="margin-left:-30px;"></div>
-        </div>
-        <div class="col-xs-6">
-          <div class="pull-right gu-02" style="margin-right: -35px;"></div>
-        </div>
+    <div id="featurette-contact" class="row featurette">
+      <div class="container">
+        <a name="contact"></a>
+        <p class="text-center"><img src="images/contact/logo_white.png" alt="UniCube"></p>
+        <h1 class="text-center">Contact Us</h1>
+        <p class="text-center"><a href="mailto:info@unicube.com.tw">info@unicube.com.tw</a></p>
       </div>
     </div>
+    <!-- /END THE FEATURETTES -->
 
-    <!-- Ground -->
-    <div class="ground">
-      <div class="center block-02"></div>
-    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <img class="pull-left" src="images/logo_bottom.png" alt="UniCube">
+        <p class="text-right" style="margin-top:10px;"><a href="#home">Back to top</a></p>
+        <p class="text-right">© 2014 Unicube Co., Ltd.</p>
+      </div>
+    </footer>
 
-  </div><!-- /.skrollr-body -->
+  </div><!-- /.marketing -->
+
 
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -170,12 +155,5 @@
   <![endif]-->
   <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="bower_components/skrollr/dist/skrollr.min.js"></script>
-  <script type="text/javascript">
-    // var s = skrollr.init({
-    //   forceHeight: false,
-    //   mobileDeceleration: 1
-    // });
-  </script>
 </body>
 </html>

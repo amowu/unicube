@@ -1,6 +1,9 @@
 body {
   background-color: #002b55;
 }
+footer {
+  background-color: white;
+}
 .carousel-inner > .item > img {
   margin: 0 auto;
 }
@@ -96,16 +99,23 @@ body {
   z-index: 505;
 }
 #featurette-about {
-  background: url("../images/about/pic_aboutL.png") no-repeat right top;
+  height: 623px;
+  background: url("../images/about/pic_aboutL.png") no-repeat center top;
   color: white;
 }
 #featurette-join {
   height: 623px;
-  background: url("../images/joinus/pic_joinus02.png") no-repeat left top;
+  background: url("../images/joinus/pic_joinus02.png") no-repeat center top;
   color: #002b55;
 }
 #featurette-outsource {
   height: 630px;
   background: url("../images/outsource/pic_outsource.png") no-repeat center bottom;
   color: #002b55;
+}
+#featurette-contact {
+  height: 630px;
+  background: url("../images/contact/pic_contact.png") no-repeat center center;
+  color: #f7b400;
+  padding-top: 100px;
 }

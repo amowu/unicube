@@ -21,6 +21,14 @@
 @bg-about: "@{images}/about/pic_aboutL.png";
 @bg-join: "@{images}/joinus/pic_joinus02.png";
 @bg-outsource: "@{images}/outsource/pic_outsource.png";
+@bg-contact: "@{images}/contact/pic_contact.png";
+
+.background-cover() {
+  -moz-background-size: contain;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
 
 .sprite(@url, @repeat, @left, @top) {
   background: @url @repeat @left @top;
@@ -28,6 +36,10 @@
 
 body {
   background-color: @dark-blue;
+}
+
+footer {
+  background-color: white;
 }
 
 .carousel-inner > .item > img { margin: 0 auto; }
@@ -133,16 +145,26 @@ body {
 }
 
 #featurette-about {
-  background: url(@bg-about) no-repeat right top;
+  height: 623px;
+  background: url(@bg-about) no-repeat center top;
   color: white;
+  // .background-cover();
 }
 #featurette-join {
-	height: 623px;
-  background: url(@bg-join) no-repeat left top;
+  height: 623px;
+  background: url(@bg-join) no-repeat center top;
   color: @dark-blue;
+  //.background-cover();
 }
 #featurette-outsource {
   height: 630px;
   background: url(@bg-outsource) no-repeat center bottom;
   color: @dark-blue;
+  // .background-cover();
+}
+#featurette-contact {
+  height: 630px;
+  background: url(@bg-contact) no-repeat center center;
+  color: @pure-orange;
+  padding-top: 100px;
 }
