@@ -6,6 +6,13 @@ footer {
 }
 .carousel-inner > .item > img {
   margin: 0 auto;
+  min-width: 1170px;
+}
+.carousel {
+  height: 623px;
+}
+.carousel .item {
+  height: 623px;
 }
 .center {
   margin: 0 auto;
