@@ -26,9 +26,9 @@
 @cg-gu-l: "@{images}/games/gumorning_pic_l.png";
 @cg-gu-m: "@{images}/games/gumorning_pic_m.png";
 @cg-gu-s: "@{images}/games/gumorning_pic_s.png";
-@cg-sd-l: "@{images}/games/sd_pic_l.png";
-@cg-sd-m: "@{images}/games/sd_pic_m.png";
-@cg-sd-s: "@{images}/games/sd_pic_s.png";
+@cg-sc-l: "@{images}/games/subcat_pic_l.png";
+@cg-sc-m: "@{images}/games/subcat_pic_m.png";
+@cg-sc-s: "@{images}/games/subcat_pic_s.png";
 @cg-xd-l: "@{images}/games/xd_pic_l.png";
 @cg-xd-m: "@{images}/games/xd_pic_m.png";
 @cg-xd-s: "@{images}/games/xd_pic_s.png";
@@ -71,6 +71,12 @@ footer {
   background-color: white;
 }
 
+.center {
+  margin: 0 auto;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 .carousel-inner > .item > img { 
   margin: 0 auto;
 }
@@ -81,116 +87,14 @@ footer {
   height: @carousel-height-s;
 }
 
-.center {
-  margin: 0 auto;
-}
-
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.skrollable {
-  position: fixed;
-  pointer-events: none;
-}
-
-.sky {
-  width: 100%;
-  height: @sky-height;
-  background: @citrine-white url(@sprite-bg-i-001) repeat-x left top;
-  z-index: @z-index-bg - 1;
-}
-.cloud-01 {
-  .sprite(url(@sprite-cloud-01), no-repeat, 0, (@navbar-height + @carousel-height-l));
-  width: 100%;
-  height: 100%;
-  z-index: @z-index-bg + 1;
-}
-.cloud-02 {
-  .sprite(url(@sprite-cloud-02), repeat-x, 0, (@navbar-height + @carousel-height-l));
-  width: 100%;
-  height: 100%;
-  z-index: @z-index-bg;
-}
-.tree-01 {
-  .sprite(url(@sprite-bg-f-001), no-repeat, 0, 0);
-  width: 512px;
-  height: 512px;
-  z-index: @z-index-bg + 3;
-}
-.tree-02 {
-  .sprite(url(@sprite-bg-f-001), no-repeat, -512px, -256px);
-  width: 256px;
-  height: 256px;
-  z-index: @z-index-bg + 2;
-}
-.house {
-  .sprite(url(@sprite-bg-e-001), no-repeat, 0, 0);
-  width: 512px;
-  height: 512px;
-  z-index: @z-index-bg + 4;
-}
-.scarecrow {
-  .sprite(url(@sprite-bg-f-001), no-repeat, -512px, 0);
-  width: 512px;
-  height: 256px;
-  z-index: @z-index-bg + 5;
-}
-.ground {
-  .sprite(url(@sprite-bg-c-001), repeat-x, left, bottom);
-  height: 128px;
-}
-.block-01 {
-  .sprite(url(@sprite-block-01), no-repeat, 0, 0);
-  margin-right: -96px;
-  width: 192px;
-  height: 192px;
-  z-index: @z-index-fg;
-}
-.block-02 {
-  .sprite(url(@sprite-block-02), no-repeat, 0, 0);
-  background-position: center;
-  width: 100%;
-  height: 128px;
-  z-index: @z-index-fg + 1;
-}
-.gu-01 {
-  .sprite(url(@sprite-gu), no-repeat, 0, 0);
-  width: 120px;
-  height: 120px;
-  z-index: @z-index-fg + 2;
-}
-.gu-02 {
-  .sprite(url(@sprite-gu), no-repeat, -120px, 0);
-  width: 120px;
-  height: 120px;
-  z-index: @z-index-fg + 3;
-}
-.grass-01 {
-  .sprite(url(@sprite-bg-a-001), no-repeat, -512px, 0);
-  width: 512px;
-  height: 320px;
-  z-index: @z-index-fg + 4;
-}
-.grass-02 {
-  .sprite(url(@sprite-bg-a-001), no-repeat, 0, 0);
-  width: 512px;
-  height: 320px;
-  z-index: @z-index-fg + 5;
-}
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
 #carousel-gumorning {
   height: 100%;
   background: url(@cg-gu-s) no-repeat center top;
   .background-contain();
 }
-#carousel-sango {
+#carousel-subcat {
   height: 100%;
-  background: url(@cg-sd-s) no-repeat center top;
+  background: url(@cg-sc-s) no-repeat center top;
   .background-contain();
 }
 #carousel-xd {
@@ -239,9 +143,9 @@ footer {
     background: url(@cg-gu-m) no-repeat center top;
     .background-contain();
   }
-  #carousel-sango {
+  #carousel-subcat {
     height: 100%;
-    background: url(@cg-sd-m) no-repeat center top;
+    background: url(@cg-sc-m) no-repeat center top;
     .background-contain();
   }
   #carousel-xd {
@@ -291,9 +195,9 @@ footer {
     background: url(@cg-gu-l) no-repeat center bottom fixed;
     .background-cover();
   }
-  #carousel-sango {
+  #carousel-subcat {
     height: @carousel-height-l;
-    background: url(@cg-sd-l) no-repeat center bottom fixed;
+    background: url(@cg-sc-l) no-repeat center bottom fixed;
     .background-cover();
   }
   #carousel-xd {
