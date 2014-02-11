@@ -5960,6 +5960,11 @@ body {
 footer {
   background-color: white;
 }
+.center {
+  margin: 0 auto;
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 .carousel-inner > .item > img {
   margin: 0 auto;
 }
@@ -5969,104 +5974,6 @@ footer {
 .carousel .item {
   height: 259px;
 }
-.center {
-  margin: 0 auto;
-}
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.skrollable {
-  position: fixed;
-  pointer-events: none;
-}
-.sky {
-  width: 100%;
-  height: 1318px;
-  background: #faf2d4 url("../images/BG_I_001.png") repeat-x left top;
-  z-index: -501;
-}
-.cloud-01 {
-  background: url("../images/cloud_01.png") no-repeat 0 750px;
-  width: 100%;
-  height: 100%;
-  z-index: -499;
-}
-.cloud-02 {
-  background: url("../images/cloud_02.png") repeat-x 0 750px;
-  width: 100%;
-  height: 100%;
-  z-index: -500;
-}
-.tree-01 {
-  background: url("../images/BG_F_001.png") no-repeat 0 0;
-  width: 512px;
-  height: 512px;
-  z-index: -497;
-}
-.tree-02 {
-  background: url("../images/BG_F_001.png") no-repeat -512px -256px;
-  width: 256px;
-  height: 256px;
-  z-index: -498;
-}
-.house {
-  background: url("../images/BG_E_001.png") no-repeat 0 0;
-  width: 512px;
-  height: 512px;
-  z-index: -496;
-}
-.scarecrow {
-  background: url("../images/BG_F_001.png") no-repeat -512px 0;
-  width: 512px;
-  height: 256px;
-  z-index: -495;
-}
-.ground {
-  background: url("../images/BG_C_001.png") repeat-x left bottom;
-  height: 128px;
-}
-.block-01 {
-  background: url("../images/BLOCK_01.png") no-repeat 0 0;
-  margin-right: -96px;
-  width: 192px;
-  height: 192px;
-  z-index: 500;
-}
-.block-02 {
-  background: url("../images/BLOCK_02.png") no-repeat 0 0;
-  background-position: center;
-  width: 100%;
-  height: 128px;
-  z-index: 501;
-}
-.gu-01 {
-  background: url("../images/GU.png") no-repeat 0 0;
-  width: 120px;
-  height: 120px;
-  z-index: 502;
-}
-.gu-02 {
-  background: url("../images/GU.png") no-repeat -120px 0;
-  width: 120px;
-  height: 120px;
-  z-index: 503;
-}
-.grass-01 {
-  background: url("../images/BG_A_001.png") no-repeat -512px 0;
-  width: 512px;
-  height: 320px;
-  z-index: 504;
-}
-.grass-02 {
-  background: url("../images/BG_A_001.png") no-repeat 0 0;
-  width: 512px;
-  height: 320px;
-  z-index: 505;
-}
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
 #carousel-gumorning {
   height: 100%;
   background: url("../images/games/gumorning_pic_s.png") no-repeat center top;
@@ -6075,9 +5982,9 @@ footer {
   -o-background-size: contain;
   background-size: contain;
 }
-#carousel-sango {
+#carousel-subcat {
   height: 100%;
-  background: url("../images/games/sd_pic_s.png") no-repeat center top;
+  background: url("../images/games/subcat_pic_s.png") no-repeat center top;
   -moz-background-size: contain;
   -webkit-background-size: contain;
   -o-background-size: contain;
@@ -6146,9 +6053,9 @@ footer {
     -o-background-size: contain;
     background-size: contain;
   }
-  #carousel-sango {
+  #carousel-subcat {
     height: 100%;
-    background: url("../images/games/sd_pic_m.png") no-repeat center top;
+    background: url("../images/games/subcat_pic_m.png") no-repeat center top;
     -moz-background-size: contain;
     -webkit-background-size: contain;
     -o-background-size: contain;
@@ -6218,9 +6125,9 @@ footer {
     -o-background-size: cover;
     background-size: cover;
   }
-  #carousel-sango {
+  #carousel-subcat {
     height: 700px;
-    background: url("../images/games/sd_pic_l.png") no-repeat center bottom fixed;
+    background: url("../images/games/subcat_pic_l.png") no-repeat center bottom fixed;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
