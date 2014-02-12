@@ -6040,10 +6040,10 @@ footer {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .carousel {
-    height: 487px;
+    height: 483px;
   }
   .carousel .item {
-    height: 487px;
+    height: 483px;
   }
   #carousel-gumorning {
     height: 100%;
