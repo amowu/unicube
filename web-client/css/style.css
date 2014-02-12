@@ -5969,10 +5969,10 @@ footer {
   margin: 0 auto;
 }
 .carousel {
-  height: 182px;
+  height: 258px;
 }
 .carousel .item {
-  height: 182px;
+  height: 258px;
 }
 #carousel-gumorning {
   height: 100%;
@@ -6040,10 +6040,10 @@ footer {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .carousel {
-    height: 403px;
+    height: 487px;
   }
   .carousel .item {
-    height: 403px;
+    height: 487px;
   }
   #carousel-gumorning {
     height: 100%;
@@ -6120,36 +6120,20 @@ footer {
   #carousel-gumorning {
     height: 623px;
     background: url("../images/games/gumorning_pic_l.png") no-repeat center bottom;
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
   }
   #carousel-subcat {
     height: 623px;
     background: url("../images/games/subcat_pic_l.png") no-repeat center bottom;
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
   }
   #carousel-xd {
     height: 623px;
     background: url("../images/games/xd_pic_l.png") no-repeat center bottom;
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
   }
   #featurette-about {
     height: 623px;
     padding-top: 5%;
     background: url("../images/about/pic_about_l.png") no-repeat center center;
     color: white;
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
   }
   #featurette-join {
     height: 623px;
@@ -6157,10 +6141,6 @@ footer {
     padding-bottom: 0;
     background: url("../images/joinus/pic_joinus02.png") no-repeat center center;
     color: #002b55;
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
   }
   #featurette-outsource {
     height: 630px;
@@ -6168,10 +6148,6 @@ footer {
     padding-bottom: 0;
     background: url("../images/outsource/pic_outsource_l.png") no-repeat center bottom;
     color: #002b55;
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
   }
   #featurette-contact {
     height: 628px;
