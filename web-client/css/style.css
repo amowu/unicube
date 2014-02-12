@@ -5969,10 +5969,10 @@ footer {
   margin: 0 auto;
 }
 .carousel {
-  height: 259px;
+  height: 182px;
 }
 .carousel .item {
-  height: 259px;
+  height: 182px;
 }
 #carousel-gumorning {
   height: 100%;
@@ -6040,10 +6040,10 @@ footer {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .carousel {
-    height: 480px;
+    height: 403px;
   }
   .carousel .item {
-    height: 480px;
+    height: 403px;
   }
   #carousel-gumorning {
     height: 100%;
@@ -6112,66 +6112,66 @@ footer {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .carousel {
-    height: 700px;
+    height: 623px;
   }
   .carousel .item {
-    height: 700px;
+    height: 623px;
   }
   #carousel-gumorning {
-    height: 700px;
-    background: url("../images/games/gumorning_pic_l.png") no-repeat center bottom fixed;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    height: 623px;
+    background: url("../images/games/gumorning_pic_l.png") no-repeat center bottom;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
   }
   #carousel-subcat {
-    height: 700px;
-    background: url("../images/games/subcat_pic_l.png") no-repeat center bottom fixed;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    height: 623px;
+    background: url("../images/games/subcat_pic_l.png") no-repeat center bottom;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
   }
   #carousel-xd {
-    height: 700px;
-    background: url("../images/games/xd_pic_l.png") no-repeat center bottom fixed;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    height: 623px;
+    background: url("../images/games/xd_pic_l.png") no-repeat center bottom;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
   }
   #featurette-about {
     height: 623px;
     padding-top: 5%;
-    background: #000102 url("../images/about/pic_about_l.png") no-repeat center center fixed;
+    background: url("../images/about/pic_about_l.png") no-repeat center center;
     color: white;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
   }
   #featurette-join {
     height: 623px;
     padding-top: 5%;
     padding-bottom: 0;
-    background: url("../images/joinus/pic_joinus02.png") no-repeat center center fixed;
+    background: url("../images/joinus/pic_joinus02.png") no-repeat center center;
     color: #002b55;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
   }
   #featurette-outsource {
     height: 630px;
     padding-top: 5%;
     padding-bottom: 0;
-    background: url("../images/outsource/pic_outsource_l.png") no-repeat center bottom fixed;
+    background: url("../images/outsource/pic_outsource_l.png") no-repeat center bottom;
     color: #002b55;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
   }
   #featurette-contact {
     height: 628px;
