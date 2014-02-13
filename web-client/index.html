@@ -9,8 +9,7 @@
 </head>
 <body>
   <!-- Navbar -->
-
-  <div class="navbar-default navbar-static-top" role="navigation">
+  <div name="top" class="navbar-default navbar-static-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -19,7 +18,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" name="home"><img src="images/logo_top.png" alt="Unicube Co., Ltd."></a>
+        <a class="navbar-brand"><img src="images/logo_top.png" alt="Unicube Co., Ltd."></a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -39,7 +38,7 @@
               <li><a href="#outsource">OUTSOURCE</a></li>
             </ul>
           </li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="mailto:info@unicube.com.tw">CONTACT</a></li>
         </ul>
       </div>
     </div>
@@ -97,8 +96,7 @@
   <div class="marketing">
 
     <!-- ABOUT featurette -->
-    <a name="about"></a>
-    <div id="featurette-about">
+    <div name="about" id="featurette-about">
       <div class="container">
         <div class="col-md-6">
           <h1 class="text-center">About UniCube</h1>
@@ -110,8 +108,7 @@
     </div><!-- /END ABOUT featurette -->
 
     <!-- JOB featurette -->
-    <a name="join"></a>
-    <div id="featurette-join">
+    <div name="join" id="featurette-join">
       <div class="container">
         <div class="col-md-6"></div>
         <div class="col-md-6">
@@ -128,8 +125,7 @@
       </div>
     </div>
 
-    <a name="outsource"></a>
-    <div id="featurette-outsource">
+    <div name="outsource" id="featurette-outsource">
       <div class="container">
         <div class="col-md-6">
           <h1 class="text-center">Outsource</h1>
@@ -139,14 +135,6 @@
       </div>
     </div><!-- /END JOB featurette -->
 
-    <!-- CONTACT featurette -->
-    <a name="contact"></a>
-    <div id="featurette-contact">
-      <div class="container">
-        <h1 class="text-center">Contact Us</h1>
-        <p class="text-center"><a href="mailto:info@unicube.com.tw">info@unicube.com.tw</a></p>
-      </div>
-    </div>
     <!-- /END THE FEATURETTES -->
 
   </div><!-- /.marketing -->
@@ -155,7 +143,7 @@
   <footer>
     <div class="container">
       <img class="pull-left" src="images/logo_bottom.png" alt="UniCube">
-      <p class="text-right" style="margin-top:10px;"><a href="#home">Back to top</a></p>
+      <p class="text-right" style="margin-top:10px;"><a href="#top">Back to top</a></p>
       <p class="text-right">© 2014 Unicube Co., Ltd.</p>
     </div>
   </footer>
@@ -168,6 +156,20 @@
   <![endif]-->
   <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('body').animate({scrollTop: target.offset().top});
+          return false;
+        }
+      }
+    });
+  });
+  </script>
   <!-- Google Analytics -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
