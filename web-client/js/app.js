@@ -1,11 +1,12 @@
 var app = angular.module('app', [
   'ngRoute',
-  'mainController',
+  'pascalprecht.translate',
+  'mainControllers',
   'jobControllers'
 ]);
 
-app.config(['$routeProvider',
-  function($routeProvider) {
+app.config(['$routeProvider', '$translateProvider',
+  function($routeProvider, $translateProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'partials/home.html',
@@ -13,9 +14,15 @@ app.config(['$routeProvider',
       })
       .when('/jobs', {
         templateUrl: 'partials/job-list.html',
-        controller: 'JobListCtrl'
+        controller: 'JobListController'
       })
       .otherwise({
         redirectTo: '/'
       });
+
+    $translateProvider.useStaticFilesLoader({
+      prefix: 'assets/localizations/',
+      suffix: '.json'
+    });
+    $translateProvider.preferredLanguage('zh-TW');
   }]);

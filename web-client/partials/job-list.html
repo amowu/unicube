@@ -1,7 +1,7 @@
 <h1>Job List</h1>
 
-<ul class="jobs">
-  <li ng-repeat="job in jobs | filter:'enable' | orderBy:'updatedate':true">
+<ol class="jobs">
+  <li ng-repeat="job in jobs | filter:{enabled:1} | orderBy:'updated':true">
     <p>{{job.name}}</p>
     <p>{{job.updatedate}}</p>
     <p>{{job.place}}</p>
@@ -9,4 +9,4 @@
     <p>{{job.education}}</p>
     <p>{{job.description}}</p>
   </li>
-</ul>
+</ol>

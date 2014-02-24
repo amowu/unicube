@@ -1,15 +1,12 @@
-var spreadsheetServices = angular.module('spreadsheetServices', []);
+var jobServices = angular.module('jobServices', []);
 
-spreadsheetServices.factory('Spreadsheet', ['$rootScope',
+jobServices.factory('Job', ['$rootScope',
   function($rootScope) {
     return {
       query: function(callback) {
         Tabletop.init({
           key: '0AhPhtlCrkuIFdHVqc3pFbFdBdjJjSm5vUUhTcHRaUkE',
           callback: function(data, tabletop) {
-
-          	console.log(data);
-
             if(callback && typeof(callback) === "function") {
               $rootScope.$apply(function() {
                 callback(data);
