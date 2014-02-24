@@ -1,0 +1,12 @@
+<h1>Job List</h1>
+
+<ul class="jobs">
+  <li ng-repeat="job in jobs | filter:'enable' | orderBy:'updatedate':true">
+    <p>{{job.name}}</p>
+    <p>{{job.updatedate}}</p>
+    <p>{{job.place}}</p>
+    <p>{{job.experience}}</p>
+    <p>{{job.education}}</p>
+    <p>{{job.description}}</p>
+  </li>
+</ul>

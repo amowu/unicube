@@ -5954,9 +5954,6 @@ td.visible-print {
     display: none !important;
   }
 }
-body {
-  background-color: #002b55;
-}
 footer {
   background-color: white;
 }

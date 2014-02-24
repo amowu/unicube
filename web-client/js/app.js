@@ -1,7 +1,7 @@
 var app = angular.module('app', [
   'ngRoute',
-  'directives.skrollr',
-  'mainController'
+  'mainController',
+  'jobControllers'
 ]);
 
 app.config(['$routeProvider',
@@ -10,6 +10,10 @@ app.config(['$routeProvider',
       .when('/', {
         templateUrl: 'partials/home.html',
         controller: 'HomeController'
+      })
+      .when('/jobs', {
+        templateUrl: 'partials/job-list.html',
+        controller: 'JobListCtrl'
       })
       .otherwise({
         redirectTo: '/'
