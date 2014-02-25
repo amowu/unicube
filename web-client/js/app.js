@@ -20,6 +20,8 @@ app.config(['$routeProvider', '$translateProvider',
         redirectTo: '/'
       });
 
+    // i18n
+    // @see https://github.com/angular-translate/angular-translate
     $translateProvider.useStaticFilesLoader({
       prefix: 'assets/localizations/',
       suffix: '.json'

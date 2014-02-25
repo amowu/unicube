@@ -43,18 +43,11 @@
 @bg-contact-m: "@{images}/contact/pic_contact_m.png";
 @bg-contact-s: "@{images}/contact/pic_contact_s.png";
 
-footer {
-  height: 105px;
-}
-
 // Property
-.carousel, .carousel-inner, .carousel-inner .item {
-  height: 100%;
-}
-
-.section {
-  height: 100%; 
-}
+@navbar-height: 50px;
+@carousel-height-l: 623px;
+@carousel-height-m: @carousel-height-l - 141;
+@carousel-height-s: @carousel-height-l - 365;
 
 .background-size(@value) {
   -moz-background-size: @value;
@@ -63,95 +56,153 @@ footer {
   background-size: @value;
 }
 
-.full-wrap {
-  // position: fixed !important;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+.sprite(@url, @repeat, @left, @top) {
+  background: @url @repeat @left @top;
+}
+
+body {
+}
+
+footer {
+  background-color: white;
+}
+
+.center {
+  margin: 0 auto;
 }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-.section-gumorning {
-  background: url(@cg-gu-s) no-repeat right top;
-  .background-size(cover);
+.carousel-inner > .item > img {
+  margin: 0 auto;
 }
-.section-subcat {
-  background: url(@cg-sc-s) no-repeat left top;
-  .background-size(cover);
+.carousel {
+  height: @carousel-height-s;
 }
-.section-xd {
-  background: url(@cg-xd-s) no-repeat center bottom;
-  .background-size(cover);
+.carousel .item {
+  height: @carousel-height-s;
 }
-.section-join {
+
+#carousel-gumorning {
+  height: 100%;
+  background: url(@cg-gu-s) no-repeat center top;
+  .background-size(contain);
+}
+#carousel-subcat {
+  height: 100%;
+  background: url(@cg-sc-s) no-repeat center top;
+  .background-size(contain);
+}
+#carousel-xd {
+  height: 100%;
+  background: url(@cg-xd-s) no-repeat center top;
+  .background-size(contain);
+}
+#featurette-join {
+  padding-top: 110%;
+  padding-bottom: 0;
   background: url(@bg-join-s) no-repeat center top;
+  color: @dark-blue;
   .background-size(cover);
 }
-.section-outsource {
-  background: url(@bg-outsource-s) no-repeat center top;
+#featurette-outsource {
+  padding-top: 60%;
+  padding-bottom: 25%;
+  background: url(@bg-outsource-s) no-repeat center center;
+  color: @dark-blue;
   .background-size(cover);
 }
-.section-about {
-  background: url(@bg-about-s) no-repeat center top;
+#featurette-about {
+  padding-top: 180%;
+  background: @very-dark-blue url(@bg-about-s) no-repeat center top;
+  color: white;
   .background-size(cover);
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
-  .section-gumorning {
-    background: url(@cg-gu-m) no-repeat right top;
-    .background-size(cover);
+  .carousel {
+    height: @carousel-height-m;
   }
-  .section-subcat {
-    background: url(@cg-sc-m) no-repeat left top;
-    .background-size(cover);
+  .carousel .item {
+    height: @carousel-height-m;
   }
-  .section-xd {
-    background: url(@cg-xd-m) no-repeat center bottom;
-    .background-size(cover);
+  #carousel-gumorning {
+    height: 100%;
+    background: url(@cg-gu-m) no-repeat center top;
+    .background-size(contain);
   }
-  .section-join {
+  #carousel-subcat {
+    height: 100%;
+    background: url(@cg-sc-m) no-repeat center top;
+    .background-size(contain);
+  }
+  #carousel-xd {
+    height: 100%;
+    background: url(@cg-xd-m) no-repeat center top;
+    .background-size(contain);
+  }
+  #featurette-join {
+    padding-top: 70%;
+    padding-bottom: 20%;
     background: url(@bg-join-m) no-repeat center top;
+    color: @dark-blue;
     .background-size(cover);
   }
-  .section-outsource {
-    background: url(@bg-outsource-m) no-repeat center top;
+  #featurette-outsource {
+    padding-top: 30%;
+    padding-bottom: 25%;
+    background: url(@bg-outsource-m) no-repeat center center;
+    color: @dark-blue;
     .background-size(cover);
   }
-  .section-about {
-    background: url(@bg-about-m) no-repeat center top;
+  #featurette-about {
+    padding-top: 85%;
+    background: @very-dark-blue url(@bg-about-m) no-repeat center top;
+    color: white;
     .background-size(cover);
   }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-  .section-gumorning {
-    background: url(@cg-gu-l) no-repeat center top;
-    .background-size(cover);
+  .carousel {
+    height: @carousel-height-l;
   }
-  .section-subcat {
-    background: url(@cg-sc-l) no-repeat center top;
-    .background-size(cover);
+  .carousel .item {
+    height: @carousel-height-l;
   }
-  .section-xd {
+  #carousel-gumorning {
+    height: @carousel-height-l;
+    background: url(@cg-gu-l) no-repeat center bottom;
+  }
+  #carousel-subcat {
+    height: @carousel-height-l;
+    background: url(@cg-sc-l) no-repeat center bottom;
+  }
+  #carousel-xd {
+    height: @carousel-height-l;
     background: url(@cg-xd-l) no-repeat center bottom;
-    .background-size(cover);
   }
-  .section-join {
+  #featurette-join {
+    height: 623px;
+    padding-top: 200px;
+    padding-bottom: 0;
     background: url(@bg-join-l) no-repeat center center;
-    .background-size(cover);
+    color: @dark-blue;
   }
-  .section-outsource {
-    background: url(@bg-outsource-l) no-repeat center center;
-    .background-size(cover);
+  #featurette-outsource {
+    height: 630px;
+    padding-top: 250px;
+    padding-bottom: 0;
+    background: url(@bg-outsource-l) no-repeat center bottom;
+    color: @dark-blue;
   }
-  .section-about {
+  #featurette-about {
+    height: 623px;
+    padding-top: 200px;
     background: url(@bg-about-l) no-repeat center center;
-    .background-size(cover);
+    color: white;
   }
 }
 
