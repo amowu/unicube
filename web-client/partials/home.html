@@ -44,13 +44,13 @@
           <h3>{{ 'MENU_TITLE_JOBS' | translate }} <b class="caret"></b></h3>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="#join">{{ 'MENU_TITLE_JOIN_US' | translate }}</a></li>
-          <li><a href="#outsource">{{ 'MENU_TITLE_OUTSOURCE' | translate }}</a></li>
+          <li><a href="" ng-click="scrollTo('join')">{{ 'MENU_TITLE_JOIN_US' | translate }}</a></li>
+          <li><a href="" ng-click="scrollTo('outsource')">{{ 'MENU_TITLE_OUTSOURCE' | translate }}</a></li>
         </ul>
       </li><!-- END of JOBS dropdown -->
 
       <li>
-        <a href="#about"><h3>{{ 'MENU_TITLE_ABOUT' | translate }}</h3></a>
+        <a href="" ng-click="scrollTo('about')"><h3>{{ 'MENU_TITLE_ABOUT' | translate }}</h3></a>
       </li><!-- END of ABOUT -->
 
       <li>
@@ -82,10 +82,13 @@
   </a>
 </div><!-- END of Carousel -->
 
-<div class="section section-join">
+<div id="join" class="section section-join">
   <div class="container">
     <div class="col-md-6"></div>
     <div class="col-md-6">
+      <div class="page-header">
+        <h1 class="text-center">Join us</h1>
+      </div>
       <p class="lead">{{ 'JOIN_CONTENT' | translate }}</p>
       <ul class="lead">
         <li>{{ 'JOIN_TEXT_BENEFITS_01' | translate }}</li>
@@ -94,13 +97,17 @@
         <li>{{ 'JOIN_TEXT_BENEFITS_04' | translate }}</li>
         <li>{{ 'JOIN_TEXT_BENEFITS_05' | translate }}</li>
       </ul>
+      <p class="text-center"><a href="#/jobs" class="btn btn-default btn-lg">職缺列表 »</a></p>
     </div>
   </div>
 </div>
 
-<div class="section section-outsource">
+<div id="outsource" class="section section-outsource">
   <div class="container">
     <div class="col-md-6">
+      <div class="page-header">
+        <h1 class="text-center">Outsource</h1>
+      </div>
       <p class="lead">{{ 'OUTSOURCE_CONTENT' | translate }}</p>
       <p class="lead text-center">{{ 'OUTSOURCE_TEXT_CONTACT' | translate }}： <a href="mailto:outsource@unicube.com.tw">outsource@unicube.com.tw <b class="glyphicon glyphicon-envelope"></b></a></p>
     </div>
@@ -108,9 +115,12 @@
   </div>
 </div>
 
-<div class="section section-about">
+<div id="about" class="section section-about">
   <div class="container">
     <div class="col-md-6">
+      <div class="page-header">
+        <h1 class="text-center">About</h1>
+      </div>
       <p class="lead">{{ 'ABOUT_CONTENT' | translate }}</p>
       <p class="lead text-center">{{ 'ABOUT_TEXT_PARTNER' | translate }}</p>
       <p class="text-center"><a href="http://tw.gamania.com" target="_blank"><img src="images/about/logo_gamania.png" alt="{{ 'ABOUT_TEXT_GAMANIA' | translate }}"></a></p>
@@ -120,9 +130,11 @@
   </div>
 </div>
 
+<hr>
+
 <!-- Footer -->
-<footer>
+<div class="footer container">
   <p class="text-center">© 2014 Unicube Corporation</p>
-</footer><!-- END of Footer -->
+</div><!-- END of Footer -->
 
 </div>

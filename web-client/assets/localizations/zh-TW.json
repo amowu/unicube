@@ -1,4 +1,5 @@
 {
+  "MENU_TITLE_HOME": "HOME",
   "MENU_TITLE_GAMES": "GAMES",
   "MENU_TITLE_JOBS": "JOBS",
   "MENU_TITLE_JOIN_US": "JOIN US",
@@ -19,5 +20,11 @@
   "ABOUT_CONTENT": "遊酷科技專注手機遊戲研發，2013年「末日少女」上市，成績亮眼，深獲玩家支持。2014年起將推出多款手機與平板遊戲，開拓市場。Unicube由Uni和Cube組成，意寓無限的創意與組合。Unicube立志成為一家卓越的行動遊戲公司， 以創造隨時隨地的快樂為使命，為人們帶來最佳的遊戲體驗。",
   "ABOUT_TEXT_PARTNER": "合作夥伴",
   "ABOUT_TEXT_GAMANIA": "遊戲橘子",
-  "ABOUT_TEXT_MIMIGIGI": "秘密基地"
+  "ABOUT_TEXT_MIMIGIGI": "秘密基地",
+  "JOB_LIST_TITLE": "職缺列表",
+  "JOB_LIST_TEXT_JOIN_US": "加入我們！",
+  "JOB_LIST_TEXT_CONTACT": "聯絡我們",
+  "JOB_LIST_TEXT_EDUCATION": "學歷",
+  "JOB_LIST_TEXT_EXPERIENCE": "經驗",
+  "JOB_LIST_TEXT_PLACE": "地點"
 }
