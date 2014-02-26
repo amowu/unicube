@@ -1,0 +1,93 @@
+<div class="full-wrap">
+<!-- Navbar -->
+<div name="top" class="navbar-default navbar-static-top" role="navigation">
+  <div class="navbar-header">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#"><img src="images/logo_top.png" alt="Logo"></a>
+    <!-- Menu Toggle Button for mobile -->
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle menu</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div><!-- END of navbar-header -->
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <!-- GAMES dropdown -->
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          <h3>{{ 'MENU_GAMES' | translate }} <b class="caret"></b></h3>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#games" data-target="#carousel-generic" data-slide-to="0">
+              {{ 'GAME_GUMORNING' | translate }}
+            </a>
+          </li><!-- END of GAME_GUMORNING -->
+          <li>
+            <a href="#games" data-target="#carousel-generic" data-slide-to="1">
+              {{ 'GAME_SUBCAT' | translate }}
+            </a>
+          </li><!-- END of GAME_SUBCAT -->
+          <li>
+            <a href="#games" data-target="#carousel-generic" data-slide-to="2">
+              {{ 'GAME_XD' | translate }}
+            </a>
+          </li><!-- END of GAME_XD -->
+        </ul>
+      </li><!-- END of GAMES dropdown -->
+
+      <!-- JOBS dropdown -->
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          <h3>{{ 'MENU_JOBS' | translate }} <b class="caret"></b></h3>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#join">{{ 'MENU_JOIN_US' | translate }}</a></li>
+          <li><a href="#outsource">{{ 'MENU_OUTSOURCE' | translate }}</a></li>
+        </ul>
+      </li><!-- END of JOBS dropdown -->
+
+      <li>
+        <a href="#about"><h3>{{ 'MENU_ABOUT' | translate }}</h3></a>
+      </li><!-- END of ABOUT -->
+
+      <li>
+        <a href="mailto:info@unicube.com.tw"><h3>{{ 'MENU_CONTACT' | translate }} <b class="glyphicon glyphicon-envelope"></b></h3></a>
+      </li><!-- END of CONTACT -->
+    </ul>
+  </div><!-- END of navbar-collapse -->
+</div><!-- END of Navbar -->
+
+<!-- Carousel -->
+<div id="carousel-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-generic" data-slide-to="0"></li>
+    <li data-target="#carousel-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-generic" data-slide-to="2" class="active"></li>
+  </ol><!-- END of Indicators -->
+  <div class="carousel-inner">
+    <div class="item section-gumorning"></div>
+    <div class="item section-subcat"></div>
+    <div class="item section-xd active"></div>
+  </div><!-- END of carousel-inner -->
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div><!-- END of Carousel -->
+
+<div class="section-outsource" style="height:100%;"></div>
+<div class="section-about" style="height:100%;"></div>
+
+<!-- Footer -->
+<footer>
+  <p class="text-center">© 2014 Unicube Corporation</p>
+</footer><!-- END of Footer -->
+
+</div>

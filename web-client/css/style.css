@@ -2266,8 +2266,8 @@ input[type="button"].btn-block {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  src: url('../bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot');
+  src: url('../bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -5954,180 +5954,164 @@ td.visible-print {
     display: none !important;
   }
 }
-body {
-  background-color: #002b55;
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
 }
-footer {
-  background-color: white;
-}
-.center {
-  margin: 0 auto;
+.full-wrap {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-.carousel-inner > .item > img {
-  margin: 0 auto;
+.section {
+  height: auto;
 }
-.carousel {
-  height: 258px;
+.section-gumorning {
+  background: url("../images/games/gumorning_pic_s.png") no-repeat left top;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.carousel .item {
-  height: 258px;
+.section-subcat {
+  background: url("../images/games/subcat_pic_s.png") no-repeat right top;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-#carousel-gumorning {
-  height: 100%;
-  background: url("../images/games/gumorning_pic_s.png") no-repeat center top;
-  -moz-background-size: contain;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+.section-xd {
+  background: url("../images/games/xd_pic_s.png") no-repeat center bottom;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-#carousel-subcat {
-  height: 100%;
-  background: url("../images/games/subcat_pic_s.png") no-repeat center top;
-  -moz-background-size: contain;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-}
-#carousel-xd {
-  height: 100%;
-  background: url("../images/games/xd_pic_s.png") no-repeat center top;
-  -moz-background-size: contain;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-}
-#featurette-join {
-  padding-top: 110%;
-  padding-bottom: 0;
+.section-join {
+  color: #002b55;
   background: url("../images/joinus/pic_joinus_s.png") no-repeat center top;
-  color: #002b55;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-#featurette-outsource {
-  padding-top: 60%;
-  padding-bottom: 25%;
-  background: url("../images/outsource/pic_outsource_s.png") no-repeat center center;
+.section-outsource {
   color: #002b55;
+  background: url("../images/outsource/pic_outsource_s.png") no-repeat center top;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-#featurette-about {
-  padding-top: 180%;
+.section-about {
+  padding-top: 350px;
+  color: #faf2d4;
   background: #000102 url("../images/about/pic_about_s.png") no-repeat center top;
-  color: white;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -moz-background-size: contain;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .carousel {
-    height: 482px;
+  .section {
+    height: auto;
   }
-  .carousel .item {
-    height: 482px;
+  .section-gumorning {
+    background: url("../images/games/gumorning_pic_m.png") no-repeat right top;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-  #carousel-gumorning {
-    height: 100%;
-    background: url("../images/games/gumorning_pic_m.png") no-repeat center top;
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+  .section-subcat {
+    background: url("../images/games/subcat_pic_m.png") no-repeat left top;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-  #carousel-subcat {
-    height: 100%;
-    background: url("../images/games/subcat_pic_m.png") no-repeat center top;
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+  .section-xd {
+    background: url("../images/games/xd_pic_m.png") no-repeat center bottom;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-  #carousel-xd {
-    height: 100%;
-    background: url("../images/games/xd_pic_m.png") no-repeat center top;
-    -moz-background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-  }
-  #featurette-join {
-    padding-top: 70%;
-    padding-bottom: 20%;
+  .section-join {
     background: url("../images/joinus/pic_joinus_m.png") no-repeat center top;
-    color: #002b55;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
-  #featurette-outsource {
-    padding-top: 30%;
-    padding-bottom: 25%;
-    background: url("../images/outsource/pic_outsource_m.png") no-repeat center center;
-    color: #002b55;
+  .section-outsource {
+    background: url("../images/outsource/pic_outsource_m.png") no-repeat center top;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
-  #featurette-about {
-    padding-top: 85%;
+  .section-about {
     background: #000102 url("../images/about/pic_about_m.png") no-repeat center top;
-    color: white;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
   }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .carousel {
-    height: 623px;
+  .section {
+    height: 100%;
   }
-  .carousel .item {
-    height: 623px;
+  .section-gumorning {
+    background: url("../images/games/gumorning_pic_l.png") no-repeat center top;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-  #carousel-gumorning {
-    height: 623px;
-    background: url("../images/games/gumorning_pic_l.png") no-repeat center bottom;
+  .section-subcat {
+    background: url("../images/games/subcat_pic_l.png") no-repeat center top;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-  #carousel-subcat {
-    height: 623px;
-    background: url("../images/games/subcat_pic_l.png") no-repeat center bottom;
-  }
-  #carousel-xd {
-    height: 623px;
+  .section-xd {
     background: url("../images/games/xd_pic_l.png") no-repeat center bottom;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-  #featurette-join {
-    height: 623px;
-    padding-top: 200px;
-    padding-bottom: 0;
+  .section-join {
     background: url("../images/joinus/pic_joinus02.png") no-repeat center center;
-    color: #002b55;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-  #featurette-outsource {
-    height: 630px;
-    padding-top: 250px;
-    padding-bottom: 0;
-    background: url("../images/outsource/pic_outsource_l.png") no-repeat center bottom;
-    color: #002b55;
+  .section-outsource {
+    background: url("../images/outsource/pic_outsource_l.png") no-repeat center center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
-  #featurette-about {
-    height: 623px;
-    padding-top: 200px;
+  .section-about {
+    padding-top: 0;
     background: url("../images/about/pic_about_l.png") no-repeat center center;
-    color: white;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 /* Large devices (large desktops, 1200px and up) */

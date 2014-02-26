@@ -1,192 +1,161 @@
-<!-- Sky -->
-<div skrollr class="skrollable sky" style="left: 0px;top: 0px;" data-start="left: 0px;top: 0px;" data-1318="left: 0px;top: -1318px;"></div>
-
-<!-- Cloud -->
-<div skrollr class="skrollable cloud-02" style="background-position: 0px 480px;" data-start="background-position: 0px 480px;" data-1318="background-position: 256px -512px;"></div>
-<div skrollr class="skrollable cloud-01" style="background-position: -1024px 400px;" data-start="background-position: -1024px 400px;" data-1318="background-position: 1024px -768px;"></div>
-
-<!-- Tree -->
-<div skrollr class="skrollable tree-02" style="right: 0px;bottom: -256px" data-128-end="right: 0px;bottom: -256px" data-end="right: 0px;bottom: 64px"></div>
-<div skrollr class="skrollable tree-01" style="right: 0px;bottom: -512px" data-128-end="right: 0px;bottom: -512px" data-end="right: 0px;bottom: 64px"></div>
-
-<!-- House -->
-<div skrollr class="hidden-xs skrollable house" style="left: -128px;bottom: -512px" data-128-end="left: -128px;bottom: -512px" data-end="left: -128px;bottom: 64px"></div>
-<!-- Scarecrow -->
-<div skrollr class="hidden-xs skrollable scarecrow" style="right: 0px;bottom: -256px" data-128-end="right: 0px;bottom: -256px" data-end="right: 0px;bottom: 64px"></div>
-
-<!-- Block -->
-<div skrollr class="skrollable block-01" style="width: 192px;height: 192px;right: 50%;bottom: 100%;" data-192-end="right: 50%;bottom: 100%;" data-end="right: 50%;bottom: 0%;"></div>
-
-<!-- Grass -->
-<div skrollr class="hidden-xs skrollable grass-01" style="right: -64px;bottom: -320px;" data-start="right: -64px;bottom: -320px;" data-end="bottom: 0px;"></div>
-<div skrollr class="hidden-xs skrollable grass-02" style="left: -64px;bottom: -320px;" data-start="left: -64px;bottom: -320px;" data-end="bottom: 0px;"></div>
-
-<div id="skrollr-body">
-
-  <!-- Navbar -->
-  <div class="navbar-inverse navbar-static-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="">UniCube</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="" class="dropdown-toggle" data-toggle="dropdown">GAMES <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="">Gu Morning</a></li>
-              <li><a href="">Subcat</a></li>
-              <li><a href="">對戰三國</a></li>
-              <li><a href="">末日少女</a></li>
-            </ul>
-          </li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#jobs">JOBS</a></li>
+<div name="top" class="full-wrap">
+<!-- Navbar -->
+<div class="navbar-default navbar-static-top" role="navigation">
+  <div class="navbar-header">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#"><img src="images/logo_top.png" alt="Logo"></a>
+    <!-- Menu Toggle Button for mobile -->
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle menu</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div><!-- END of navbar-header -->
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <!-- GAMES dropdown -->
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          <h3>{{ 'MENU_TITLE_GAMES' | translate }} <b class="caret"></b></h3>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#games" data-target="#carousel-generic" data-slide-to="0">
+              {{ 'GAME_TITLE_GUMORNING' | translate }}
+            </a>
+          </li><!-- END of GAME_GUMORNING -->
+          <li>
+            <a href="#games" data-target="#carousel-generic" data-slide-to="1">
+              {{ 'GAME_TITLE_SUBCAT' | translate }}
+            </a>
+          </li><!-- END of GAME_SUBCAT -->
+          <li>
+            <a href="#games" data-target="#carousel-generic" data-slide-to="2">
+              {{ 'GAME_TITLE_XD' | translate }}
+            </a>
+          </li><!-- END of GAME_XD -->
         </ul>
-      </div>
-    </div>
-  </div>
+      </li><!-- END of GAMES dropdown -->
 
-  <!-- Carousel -->
-  <div id="carousel-example-generic" class="carousel slide" style="height:500px;" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
+      <!-- JOBS dropdown -->
+      <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+          <h3>{{ 'MENU_TITLE_JOBS' | translate }} <b class="caret"></b></h3>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="" ng-click="scrollTo('join')">{{ 'MENU_TITLE_JOIN_US' | translate }}</a></li>
+          <li><a href="" ng-click="scrollTo('outsource')">{{ 'MENU_TITLE_OUTSOURCE' | translate }}</a></li>
+        </ul>
+      </li><!-- END of JOBS dropdown -->
+      <li>
+        <a href="" ng-click="scrollTo('about')"><h3>{{ 'MENU_TITLE_ABOUT' | translate }}</h3></a>
+      </li><!-- END of ABOUT -->
+      <li>
+        <a href="mailto:info@unicube.com.tw"><h3>{{ 'MENU_TITLE_CONTACT' | translate }} <b class="glyphicon glyphicon-envelope"></b></h3></a>
+      </li><!-- END of CONTACT -->
+    </ul>
+  </div><!-- END of navbar-collapse -->
+</div><!-- END of Navbar -->
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="images/01.png" alt="...">
-        <div class="container">
-          <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="" role="button">Learn more</a></p>
+<!-- Carousel -->
+<div id="carousel-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-generic" data-slide-to="0"></li>
+    <li data-target="#carousel-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-generic" data-slide-to="2" class="active"></li>
+  </ol><!-- END of Indicators -->
+  <div class="carousel-inner">
+    <div class="item section-gumorning">
+      <div class="carousel-caption">
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3">
+            <p><a target="_blank" href="https://itunes.apple.com/tw/app/gu-morning-zao-an-gu-gu/id474441856?mt=8"><img src="images/games/Available_on_the_App_Store.png" class="img-responsive" alt="Available on the App Store"></a></p>
           </div>
+          <div class="col-sm-3">
+            <p><a target="_blank" href="https://play.google.com/store/apps/details?id=com.gamania.gumorning"><img src="images/games/Google_Play_Badge.png" class="img-responsive" alt="Available on the Google Play"></a></p>
+          </div>
+          <div class="col-sm-3"></div>
         </div>
       </div>
-      <div class="item">
-        <img src="images/02.png" alt="...">
-        <div class="container">
-          <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="" role="button">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="images/03.png" alt="...">
-        <div class="container">
-          <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="" role="button">Learn more</a></p>
-          </div>
-        </div>
+    </div>
+    <div class="item section-subcat">
+      <div class="carousel-caption">
+        <p class="text-center"><a target="_blank" href="https://itunes.apple.com/tw/app/id509979894?mt=8"><img src="images/games/Available_on_the_App_Store.png" alt="Available on the App Store"></a></p>
       </div>
     </div>
-  </div><!-- /.carousel-example-generic -->
-
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-  <div class="container marketing">
-    <hr class="featurette-divider">
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-md-4">
-        <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140x140.png">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        <p><a class="btn btn-default" href="" role="button">View details »</a></p>
-      </div><!-- /.col-md-4 -->
-      <div class="col-md-4">
-        <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140x140.png">
-        <h2>Heading</h2>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        <p><a class="btn btn-default" href="" role="button">View details »</a></p>
-      </div><!-- /.col-md-4 -->
-      <div class="col-md-4">
-        <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140x140.png">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-default" href="" role="button">View details »</a></p>
-      </div><!-- /.col-md-4 -->
-    </div><!-- /.row -->
-
-    <!-- START THE FEATURETTES -->
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive" alt="500x500" src="images/500x500.png">
+    <div class="item section-xd active">
+      <div class="carousel-caption">
+        <a class="btn btn-lg btn-default" href="https://tw.new.beanfun.com/xd" role="button" target="_blank">{{ 'CAROUSEL_LINK_XD' | translate }} »</a>
       </div>
     </div>
+  </div><!-- END of carousel-inner -->
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div><!-- END of Carousel -->
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive" alt="500x500" src="images/500x500.png">
-      </div>
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive" alt="500x500" src="images/500x500.png">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-    <!-- FOOTER -->
-    <footer>
-      <!--<p class="text-right hidden-xs"><a href="">Back to top</a></p>-->
-      <p class="text-center">© 2014 Unicube Co., Ltd.</p>
-    </footer>
-
-  </div><!-- /.marketing -->
-
-  <!-- Gu -->
+<div id="join" class="section section-join">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-6">
-        <div class="gu-01" style="margin-left:-30px;"></div>
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+      <div class="page-header">
+        <h1 class="text-center">Join us</h1>
       </div>
-      <div class="col-xs-6">
-        <div class="pull-right gu-02" style="margin-right: -35px;"></div>
-      </div>
+      <p class="lead">{{ 'JOIN_CONTENT' | translate }}</p>
+      <ul class="lead">
+        <li>{{ 'JOIN_TEXT_BENEFITS_01' | translate }}</li>
+        <li>{{ 'JOIN_TEXT_BENEFITS_02' | translate }}</li>
+        <li>{{ 'JOIN_TEXT_BENEFITS_03' | translate }}</li>
+        <li>{{ 'JOIN_TEXT_BENEFITS_04' | translate }}</li>
+        <li>{{ 'JOIN_TEXT_BENEFITS_05' | translate }}</li>
+      </ul>
+      <p class="lead text-center">{{ 'JOIN_TEXT_CONTACT' | translate }}： <a href="mailto:hr@unicube.com.tw">hr@unicube.com.tw <b class="glyphicon glyphicon-envelope"></b></a></p>
+      <p class="text-center"><a href="#/jobs" class="btn btn-default btn-lg">{{ 'JOIN_TEXT_JOB_LIST' | translate }} »</a></p>
     </div>
   </div>
+</div>
 
-  <!-- Ground -->
-  <div class="ground">
-    <div class="center block-02"></div>
+<div id="outsource" class="section section-outsource">
+  <div class="container">
+    <div class="col-md-6">
+      <div class="page-header">
+        <h1 class="text-center">Outsource</h1>
+      </div>
+      <p class="lead">{{ 'OUTSOURCE_CONTENT' | translate }}</p>
+      <p class="lead text-center">{{ 'OUTSOURCE_TEXT_CONTACT' | translate }}： <a href="mailto:outsource@unicube.com.tw">outsource@unicube.com.tw <b class="glyphicon glyphicon-envelope"></b></a></p>
+    </div>
+    <div class="col-md-6"></div>
   </div>
+</div>
 
-</div><!-- /.skrollr-body -->
+<div id="about" class="section section-about">
+  <div class="container">
+    <div class="col-md-6">
+      <div class="page-header">
+        <h1 class="text-center">About</h1>
+      </div>
+      <p class="lead">{{ 'ABOUT_CONTENT' | translate }}</p>
+      <p class="lead text-center">{{ 'ABOUT_TEXT_PARTNER' | translate }}</p>
+      <p class="text-center"><a href="http://tw.gamania.com" target="_blank"><img src="images/about/logo_gamania.png" alt="{{ 'ABOUT_TEXT_GAMANIA' | translate }}"></a></p>
+      <p class="text-center"><a href="http://www.mimigigi.com.tw" target="_blank"><img src="images/about/logo_mimigigi.png" alt="{{ 'ABOUT_TEXT_MIMIGIGI' | translate }}"></a></p>
+    </div>
+    <div class="col-md-6"></div>
+  </div>
+</div>
+
+<hr>
+
+<!-- Footer -->
+<div class="footer container">
+  <p class="text-right"><a ng-click="scrollTo('top')" href="">Back to top</a></p>
+  <p class="text-right">© 2014 Unicube Corporation</p>
+</div><!-- END of Footer -->
+
+</div>
