@@ -26,5 +26,5 @@ app.config(['$routeProvider', '$translateProvider',
       prefix: 'assets/localizations/',
       suffix: '.json'
     });
-    $translateProvider.preferredLanguage('zh-TW');
+    $translateProvider.preferredLanguage('zh_TW');
   }]);

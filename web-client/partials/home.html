@@ -1,6 +1,6 @@
-<div class="full-wrap">
+<div name="top" class="full-wrap">
 <!-- Navbar -->
-<div name="top" class="navbar-default navbar-static-top" role="navigation">
+<div class="navbar-default navbar-static-top" role="navigation">
   <div class="navbar-header">
     <!-- Logo -->
     <a class="navbar-brand" href="#"><img src="images/logo_top.png" alt="Logo"></a>
@@ -48,11 +48,9 @@
           <li><a href="" ng-click="scrollTo('outsource')">{{ 'MENU_TITLE_OUTSOURCE' | translate }}</a></li>
         </ul>
       </li><!-- END of JOBS dropdown -->
-
       <li>
         <a href="" ng-click="scrollTo('about')"><h3>{{ 'MENU_TITLE_ABOUT' | translate }}</h3></a>
       </li><!-- END of ABOUT -->
-
       <li>
         <a href="mailto:info@unicube.com.tw"><h3>{{ 'MENU_TITLE_CONTACT' | translate }} <b class="glyphicon glyphicon-envelope"></b></h3></a>
       </li><!-- END of CONTACT -->
@@ -69,9 +67,30 @@
     <li data-target="#carousel-generic" data-slide-to="2" class="active"></li>
   </ol><!-- END of Indicators -->
   <div class="carousel-inner">
-    <div class="item section-gumorning"></div>
-    <div class="item section-subcat"></div>
-    <div class="item section-xd active"></div>
+    <div class="item section-gumorning">
+      <div class="carousel-caption">
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-3">
+            <p><a target="_blank" href="https://itunes.apple.com/tw/app/gu-morning-zao-an-gu-gu/id474441856?mt=8"><img src="images/games/Available_on_the_App_Store.png" class="img-responsive" alt="Available on the App Store"></a></p>
+          </div>
+          <div class="col-sm-3">
+            <p><a target="_blank" href="https://play.google.com/store/apps/details?id=com.gamania.gumorning"><img src="images/games/Google_Play_Badge.png" class="img-responsive" alt="Available on the Google Play"></a></p>
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="item section-subcat">
+      <div class="carousel-caption">
+        <p class="text-center"><a target="_blank" href="https://itunes.apple.com/tw/app/id509979894?mt=8"><img src="images/games/Available_on_the_App_Store.png" alt="Available on the App Store"></a></p>
+      </div>
+    </div>
+    <div class="item section-xd active">
+      <div class="carousel-caption">
+        <a class="btn btn-lg btn-default" href="https://tw.new.beanfun.com/xd" role="button" target="_blank">{{ 'CAROUSEL_LINK_XD' | translate }} »</a>
+      </div>
+    </div>
   </div><!-- END of carousel-inner -->
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
@@ -97,7 +116,8 @@
         <li>{{ 'JOIN_TEXT_BENEFITS_04' | translate }}</li>
         <li>{{ 'JOIN_TEXT_BENEFITS_05' | translate }}</li>
       </ul>
-      <p class="text-center"><a href="#/jobs" class="btn btn-default btn-lg">職缺列表 »</a></p>
+      <p class="lead text-center">{{ 'JOIN_TEXT_CONTACT' | translate }}： <a href="mailto:hr@unicube.com.tw">hr@unicube.com.tw <b class="glyphicon glyphicon-envelope"></b></a></p>
+      <p class="text-center"><a href="#/jobs" class="btn btn-default btn-lg">{{ 'JOIN_TEXT_JOB_LIST' | translate }} »</a></p>
     </div>
   </div>
 </div>
@@ -134,7 +154,8 @@
 
 <!-- Footer -->
 <div class="footer container">
-  <p class="text-center">© 2014 Unicube Corporation</p>
+  <p class="text-right"><a ng-click="scrollTo('top')" href="">Back to top</a></p>
+  <p class="text-right">© 2014 Unicube Corporation</p>
 </div><!-- END of Footer -->
 
 </div>

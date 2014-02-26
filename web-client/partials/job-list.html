@@ -9,7 +9,7 @@
   <div class="jumbotron">
     <h1 class="text-center">{{ 'JOB_LIST_TEXT_JOIN_US' | translate }}</h1>
     <p class="lead">{{ 'JOIN_CONTENT' | translate }}</p>
-    <p class="text-center"><a href="mailto:info@unicube.com.tw" class="btn btn-primary btn-lg">{{ 'JOB_LIST_TEXT_CONTACT' | translate }} <span class="glyphicon glyphicon-envelope"></span></a></p>
+    <p class="text-center"><a href="mailto:hr@unicube.com.tw" class="btn btn-primary btn-lg">{{ 'JOB_LIST_TEXT_CONTACT' | translate }} <span class="glyphicon glyphicon-envelope"></span></a></p>
   </div>
   <div class="row">
     <div class="col-sm-4" ng-repeat="job in jobs | filter:{enabled:1} | orderBy:'updated':true">

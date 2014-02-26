@@ -48,10 +48,6 @@
   height: 100%;
 }
 
-.section {
-  height: 100%;
-}
-
 .background-size(@value) {
   -moz-background-size: @value;
   -webkit-background-size: @value;
@@ -70,12 +66,15 @@
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
+.section {
+  height: auto;
+}
 .section-gumorning {
-  background: url(@cg-gu-s) no-repeat right top;
+  background: url(@cg-gu-s) no-repeat left top;
   .background-size(cover);
 }
 .section-subcat {
-  background: url(@cg-sc-s) no-repeat left top;
+  background: url(@cg-sc-s) no-repeat right top;
   .background-size(cover);
 }
 .section-xd {
@@ -83,20 +82,28 @@
   .background-size(cover);
 }
 .section-join {
+  color: @dark-blue;
   background: url(@bg-join-s) no-repeat center top;
   .background-size(cover);
 }
 .section-outsource {
+  color: @dark-blue;
   background: url(@bg-outsource-s) no-repeat center top;
   .background-size(cover);
 }
 .section-about {
-  background: url(@bg-about-s) no-repeat center top;
-  .background-size(cover);
+  // TODO:
+  padding-top: 350px;
+  color: @citrine-white;
+  background: @very-dark-blue url(@bg-about-s) no-repeat center top;
+  .background-size(contain);
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
+  .section {
+    height: auto;
+  }
   .section-gumorning {
     background: url(@cg-gu-m) no-repeat right top;
     .background-size(cover);
@@ -118,13 +125,16 @@
     .background-size(cover);
   }
   .section-about {
-    background: url(@bg-about-m) no-repeat center top;
-    .background-size(cover);
+    background: @very-dark-blue url(@bg-about-m) no-repeat center top;
+    .background-size(contain);
   }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
+  .section {
+    height: 100%;
+  }
   .section-gumorning {
     background: url(@cg-gu-l) no-repeat center top;
     .background-size(cover);
@@ -146,6 +156,8 @@
     .background-size(cover);
   }
   .section-about {
+    // TODO:
+    padding-top: 0;
     background: url(@bg-about-l) no-repeat center center;
     .background-size(cover);
   }
