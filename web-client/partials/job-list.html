@@ -15,6 +15,7 @@
     <div class="col-sm-4" ng-repeat="job in jobs | filter:{enabled:1} | orderBy:'updated':true">
       <h2>{{job.name}}</h2>
       <p>{{job.description}}</p>
+      <p>{{job.other}}</p>
       <p class="text-muted">{{ 'JOB_LIST_TEXT_EDUCATION' | translate }}：{{job.education}}</p>
       <p class="text-muted">{{ 'JOB_LIST_TEXT_EXPERIENCE' | translate }}：{{job.experience}}</p>
       <p class="text-muted">{{ 'JOB_LIST_TEXT_PLACE' | translate }}：{{job.place}}</p>
